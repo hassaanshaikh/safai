@@ -1,52 +1,4 @@
-// import { Phone, Mail, MapPin } from "lucide-react";
-
-// export default function Footer() {
-//   return (
-//     <footer className="bg-gray-900 text-gray-300 mt-20">
-//       <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
-
-//         <div>
-//           <h2 className="text-2xl font-bold text-white">
-//             Safai<span className="text-orange-500">Wala</span>
-//           </h2>
-//           <p className="mt-4 text-sm">
-//             Professional cleaning services in Karachi for homes & offices.
-//           </p>
-//         </div>
-
-//         <div>
-//           <h3 className="text-white font-semibold mb-4">Services</h3>
-//           <ul className="space-y-2">
-//             <li>Sofa Cleaning</li>
-//             <li>Carpet Cleaning</li>
-//             <li>House Cleaning</li>
-//             <li>Office Cleaning</li>
-//           </ul>
-//         </div>
-
-//         <div>
-//           <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-//           <ul className="space-y-2">
-//             <li>About</li>
-//             <li>Gallery</li>
-//             <li>Contact</li>
-//           </ul>
-//         </div>
-
-//         <div>
-//           <h3 className="text-white font-semibold mb-4">Contact</h3>
-//           <p className="flex items-center gap-2"><Phone size={16}/> +92 300 1234567</p>
-//           <p className="flex items-center gap-2"><Mail size={16}/> info@safaiwala.pk</p>
-//           <p className="flex items-center gap-2"><MapPin size={16}/> Karachi</p>
-//         </div>
-//       </div>
-
-//       <div className="text-center py-4 border-t border-gray-800 text-sm">
-//         © 2026 SafaiWala – All Rights Reserved
-//       </div>
-//     </footer>
-//   );
-// }
+import { Link } from "react-router-dom"
 
 import {
   Facebook,
@@ -62,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#1a1a2e] text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_2fr] gap-8 items-start">
           {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-[#f58220]">
@@ -94,28 +46,21 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services Links */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">SERVICES LINK</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              {[
-                "Sofa Cleaning",
-                "Carpet Cleaning",
-                "Mattress Cleaning",
-                "Office Cleaning",
-                "House Cleaning",
-              ].map((item) => (
-                <li key={item}>
-                  <a href="#" className="hover:text-[#f58220]">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          {/* quik Links */}
+          <div className="justify-self-start">
+             <h3 className="text-lg font-bold mb-4">QUICK LINKS</h3>
+
+              <div className="space-y-2 capitalize">
+                <Link to="/" className="block text-gray-400 hover:text-white"> Home </Link>
+                <Link to="/about" className="block text-gray-400 hover:text-white"> About </Link>
+                <Link to="/services" className="block text-gray-400 hover:text-white"> Services </Link>
+                <Link to="/contact" className="block text-gray-400 hover:text-white"> Contact </Link>
+              </div>
           </div>
 
+
           {/* Top Services */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-bold mb-4">TOP SERVICES</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               {[
@@ -132,7 +77,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Subscribe */}
           <div>

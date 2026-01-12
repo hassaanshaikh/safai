@@ -1,4 +1,5 @@
 import { Home as HomeIcon, Building2, Factory, Users, Shield, DollarSign, Clock } from "lucide-react"
+import m1 from "../assets/m1.png";
 
 export default function Home() {
   return (
@@ -209,7 +210,7 @@ export default function Home() {
         </div>
 
         <img
-          src="/professional-office-cleaning-team-at-work.jpg"
+          src={m1}
           alt="Mission Vision"
           className="rounded-lg shadow-xl w-full"
         />

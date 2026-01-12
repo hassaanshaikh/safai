@@ -6,20 +6,20 @@ import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import Services from "./Pages/Services";
 import About from "./Pages/About";
-import Gallery from "./Pages/Gallery";
 import Contact from "./Pages/Contact";
 
 export default function App() {
   return (
      <>
       <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} /> 
-        <Route path="/gallery" element={<Gallery />} /> 
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      
       <Footer />
     </>
   );

@@ -62,7 +62,6 @@ export default function Header() {
   { name: "HOME", path: "/" },
   { name: "ABOUT US", path: "/about" },
   { name: "OUR SERVICES", path: "/services" },
-  { name: "WORK GALLERY", path: "/gallery" },
   { name: "CONTACT US", path: "/contact" },
 ]
 
@@ -118,12 +117,6 @@ export default function Header() {
 
           {/* Phone & Button */}
           <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-center gap-2">
-              <Phone className="w-5 h-5 text-[#f58220]" />
-              <span className="font-semibold text-[#1a1a2e]">
-                0304-1110517
-              </span>
-            </div>
             <button className="bg-[#f58220] hover:bg-[#e07010] text-white px-6 py-2 rounded">
               Book Now
             </button>
