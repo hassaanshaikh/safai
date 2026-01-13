@@ -67,7 +67,7 @@ export default function Header() {
 ]
 
   return (
-    <header className="w-full fixed z-50">
+    <header className="w-full">
 
       {/* Main Header */}
       <div className="bg-white shadow-md py-3 px-4">

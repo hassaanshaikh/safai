@@ -7,7 +7,7 @@ export default function Home() {
     <>
       {/* HERO SECTION */}
       <section className="h-screen bg-[url('https://images.unsplash.com/photo-1581578731548-c64695cc6952')] bg-cover bg-center flex items-center ">
-        <div className="bg-black/60 w-full h-full flex items-center">
+        <div className="bg-black/60  w-full h-full flex items-center">
           <div className="max-w-7xl mx-auto px-6 text-white">
             <h1 className="text-4xl md:text-6xl font-bold">
               Clean Spaces. Healthy Living. <br />
