@@ -6,8 +6,15 @@ export default function AboutSection() {
   return (
     <>
     {/* MARKET LEADER SECTION */}
-<section className="py-16 bg-gray-50">
+<section className="pt-32 pb-20 px-6 bg-gray-50">
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a2e] mb-4">About Safai & Sustain Cleaning Service</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            We pride ourselves on providing standards, our professional & experienced Team. A level of quality control
+            that ensures the work is done in order to the customer's satisfaction.
+          </p>
+        </div>
     <div className="grid md:grid-cols-2 gap-12 items-center">
 
       {/* LEFT IMAGE WITH OVERLAY */}

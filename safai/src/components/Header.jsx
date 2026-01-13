@@ -55,6 +55,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
 import { Phone, Menu, X, Facebook, Twitter, Linkedin, Youtube } from "lucide-react"
+import logo from "../assets/logo1.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -66,40 +67,30 @@ export default function Header() {
 ]
 
   return (
-    <header className="w-full">
-      {/* Top Bar */}
-      {/* <div className="bg-[#1a1a2e] text-white py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center gap-4">
-            <span>info@safaiwala.pk</span>
-            <span className="hidden md:inline">|</span>
-            <span className="hidden md:inline">UAN: 0304-1110517</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Facebook className="w-4 h-4 cursor-pointer hover:text-[#f58220]" />
-            <Twitter className="w-4 h-4 cursor-pointer hover:text-[#f58220]" />
-            <Linkedin className="w-4 h-4 cursor-pointer hover:text-[#f58220]" />
-            <Youtube className="w-4 h-4 cursor-pointer hover:text-[#f58220]" />
-          </div>
-        </div>
-      </div> */}
+    <header className="w-full fixed z-50">
 
       {/* Main Header */}
       <div className="bg-white shadow-md py-3 px-4">
         <div className="container mx-auto flex justify-between items-center">
+
           {/* Logo */}
-          <Link to="/" >
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-[#f58220] rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">S</span>
-            </div>
-            <div>
-              <span className="text-[#f58220] font-bold text-xl">SAFAI</span>
-              <span className="text-[#1a1a2e] font-bold text-xl">WALA</span>
-              <span className="text-[#f58220] text-xs">.pk</span>
-            </div>
+        <Link to="/">
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="Safai & Sustain Cleaning Services" className="w-12 h-12 object-contain" />
+ 
+         {/* Text Logo */}
+              <div className="leading-tight">
+                 <h1 className="text-[#1a1a2e] font-bold text-lg md:text-xl">
+                  Safai & Sustain
+                </h1>
+                <p className="text-[#f58220] text-xs md:text-sm font-medium">
+                  Cleaning Services
+                </p>
+              </div>
+
           </div>
-          </Link>
+        </Link>
+
 
           {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8">

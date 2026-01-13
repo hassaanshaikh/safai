@@ -11,16 +11,20 @@ import Contact from "./Pages/Contact";
 export default function App() {
   return (
      <>
-      <Header />
+     <div className="min-h-screen bg-white">
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} /> 
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} /> 
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       
-      <Footer />
+        <Footer />
+        
+      </div>
     </>
   );
 }

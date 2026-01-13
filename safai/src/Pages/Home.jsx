@@ -1,16 +1,17 @@
 import { Home as HomeIcon, Building2, Factory, Users, Shield, DollarSign, Clock } from "lucide-react"
 import m1 from "../assets/m1.png";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="h-[80vh] bg-[url('https://images.unsplash.com/photo-1581578731548-c64695cc6952')] bg-cover bg-center flex items-center">
+      <section className="h-screen bg-[url('https://images.unsplash.com/photo-1581578731548-c64695cc6952')] bg-cover bg-center flex items-center ">
         <div className="bg-black/60 w-full h-full flex items-center">
           <div className="max-w-7xl mx-auto px-6 text-white">
             <h1 className="text-4xl md:text-6xl font-bold">
-              TOP CLEANING COMPANY <br />
-              <span className="text-orange-500">IN KARACHI</span>
+              Clean Spaces. Healthy Living. <br />
+              <span className="text-orange-500">Serving Hyderabad</span>
             </h1>
 
             <p className="mt-6 max-w-xl">
@@ -18,13 +19,18 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap gap-4">
+              <Link to="/services">
               <button className="bg-[#f58220] hover:bg-white text-white hover:text-[#f58220] font-bold px-8 py-3 text-md mt-4">
                 OUR SERVICES
               </button>
-
+              </Link>
+              
+              <Link to="/contact">
               <button className="border-white text-[#f58220] hover:bg-[#f58220] hover:text-white mt-4 px-8 py-3 text-md bg-white font-bold">
                 CONTACT US
               </button>
+              </Link>
+              
             </div>
           </div>
         </div>

@@ -1,17 +1,3 @@
-// export default function Services() {
-//   return (
-//     <div className="max-w-7xl mx-auto px-6 py-20">
-//       <h2 className="text-4xl font-bold mb-10 text-center">Our Services</h2>
-//       <div className="grid md:grid-cols-4 gap-6">
-//         {["Sofa","Carpet","Office","House"].map(s=>(
-//           <div key={s} className="bg-white shadow p-6 rounded-xl">
-//             <h3 className="font-semibold">{s} Cleaning</h3>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
 
 const services = [
   { title: "SOFA CLEANING", image: "sofa cleaning service professional", link: "#" },
@@ -19,20 +5,10 @@ const services = [
   { title: "CARPET CLEANING", image: "carpet cleaning steam machine", link: "#" },
   { title: "MATTRESS CLEANING", image: "mattress cleaning sanitizing", link: "#" },
   { title: "CURTAIN CLEANING", image: "curtain cleaning service", link: "#" },
-  // { title: "FLOOR CLEANING", image: "floor polishing cleaning marble", link: "#" },
-  // { title: "WINDOW CLEANING", image: "window cleaning professional squeegee", link: "#" },
-  // { title: "CHAIR CLEANING", image: "office chair cleaning service", link: "#" },
-  // { title: "CAR CLEANING", image: "car interior detailing cleaning", link: "#" },
-  // { title: "BLINDS CLEANING", image: "blinds cleaning venetian", link: "#" },
-  // { title: "SOLAR PANEL CLEANING", image: "solar panel cleaning rooftop", link: "#" },
-  // { title: "HOUSE CLEANING", image: "house cleaning maid service", link: "#" },
-  // { title: "OFFICE CLEANING", image: "office cleaning commercial workspace", link: "#" },
-  // { title: "WATER TANK CLEANING", image: "water tank cleaning sanitization", link: "#" },
 ]
-
 export default function OurServices() {
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="pt-32 pb-20 px-6 bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a2e] mb-4">OUR SERVICES</h2>

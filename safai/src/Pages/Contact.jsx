@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="pt-32 pb-20 px-6">
       <div className="container mx-auto max-w-5xl">
-        <h1 className="text-5xl font-bold text-center mb-4 bg-linear-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="text-5xl font-bold text-center mb-4 text-[#1a1a2e]">
           Get In Touch
         </h1>
 
