@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
 
 export default function Contact() {
   return (
-    <div className="pt-32 pb-20 px-6">
+    <div className="pt-18 pb-20 px-6">
       <div className="container mx-auto max-w-5xl">
         <h1 className="text-5xl font-bold text-center mb-4 text-[#1a1a2e]">
           Get In Touch
@@ -22,7 +22,7 @@ export default function Contact() {
 
             <div className="flex gap-4">
               <Phone className="text-pink-500" />
-              <p>(555) 123-4567</p>
+              <p>+92 344-3985117</p>
             </div>
 
             <div className="flex gap-4">

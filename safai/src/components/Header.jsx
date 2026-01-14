@@ -55,7 +55,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
 import { Phone, Menu, X, Facebook, Twitter, Linkedin, Youtube } from "lucide-react"
-import logo from "../assets/logo1.png";
+import logo from "../assets/card.jpeg";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -68,6 +68,13 @@ export default function Header() {
 
   return (
     <header className="w-full">
+
+      <div className="bg-[#1a1a2e] text-white py-2 px-4">
+        <div className="container mx-auto flex justify-center items-center text-sm text-center">
+          <span className="font-semibold tracking-wide text-green-300 text-xl"> صفائی کرنے کی نہیں، صفائی رکھنے کی ضرورت ہے </span>
+        </div>
+      </div>
+
 
       {/* Main Header */}
       <div className="bg-white shadow-md py-3 px-4">
@@ -108,9 +115,13 @@ export default function Header() {
 
           {/* Phone & Button */}
           <div className="hidden md:flex items-center gap-4">
+
+            <Link to="/contact">
             <button className="bg-[#f58220] hover:bg-[#e07010] text-white px-6 py-2 rounded">
               Book Now
             </button>
+            </Link>
+            
           </div>
 
           {/* Mobile Menu Button */}

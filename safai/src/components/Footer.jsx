@@ -18,7 +18,7 @@ export default function Footer() {
           {/* About */}
           <div>
             <h3 className="text-xl font-bold mb-4 text-[#f58220]">
-              SAFAIWALA.PK
+              Safai & Sustain Cleaning Services
             </h3>
             <p className="text-gray-400 text-sm mb-4">
               Leading cleaning company in Hyderabad providing professional
@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-400 mb-2">
               <Phone className="w-4 h-4 text-[#f58220]" />
-              <span>+92 304-1110517</span>
+              <span>+92 344-3985117</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-400">
               <Mail className="w-4 h-4 text-[#f58220]" />
@@ -99,7 +99,7 @@ export default function Footer() {
 
             <div className="mt-4 text-sm text-gray-400">
               Call Now:{" "}
-              <span className="text-[#f58220]">+92 304-1110517</span>
+              <span className="text-[#f58220]">+92 344-3985117</span>
             </div>
           </div>
         </div>

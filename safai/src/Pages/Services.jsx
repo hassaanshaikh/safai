@@ -1,14 +1,20 @@
+import ab1 from "../assets/ab1.PNG";
 
 const services = [
-  { title: "SOFA CLEANING", image: "sofa cleaning service professional", link: "#" },
-  { title: "UPHOLSTERY CLEANING", image: "upholstery cleaning furniture", link: "#" },
-  { title: "CARPET CLEANING", image: "carpet cleaning steam machine", link: "#" },
-  { title: "MATTRESS CLEANING", image: "mattress cleaning sanitizing", link: "#" },
-  { title: "CURTAIN CLEANING", image: "curtain cleaning service", link: "#" },
+  { title: "HOSPITAL CLEANING", image: ab1, link: "#" },
+  { title: "SCHOOL CLEANING", image: "upholstery cleaning furniture", link: "#" },
+  { title: "RESTAURANT CLEANING", image: "carpet cleaning steam machine", link: "#" },
+  { title: "APARTMENT CLEANING", image: "mattress cleaning sanitizing", link: "#" },
+  { title: "BANK OFFICE CLEANING", image: "curtain cleaning service", link: "#" },
+  { title: "PETROL PUMP CLEANING", image: "curtain cleaning service", link: "#" },
+  { title: "SOCIETY CLEANING", image: "curtain cleaning service", link: "#" },
+  { title: "FACTORY CLEANING", image: "curtain cleaning service", link: "#" },
+  { title: "HOME AND BUNGALOW CLEANING", image: "curtain cleaning service", link: "#" },
 ]
+
 export default function OurServices() {
   return (
-    <section className="pt-32 pb-20 px-6 bg-gray-50">
+    <section className="pt-12 pb-20 px-6 bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a2e] mb-4">OUR SERVICES</h2>
@@ -26,7 +32,7 @@ export default function OurServices() {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src={`/.jpg?height=200&width=300&query=${service.image}`}
+                  src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />

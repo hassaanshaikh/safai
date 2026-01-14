@@ -1,13 +1,18 @@
 import { Home as HomeIcon, Building2, Factory, Users, Shield, DollarSign, Clock } from "lucide-react"
-import m1 from "../assets/m1.png";
+import im1 from "../assets/im1.jpeg";
 import { Link } from "react-router-dom";
+import im6 from "../assets/im6.jpeg";
+import im3 from "../assets/im3.jpeg";
+import im2 from "../assets/im2.jpeg";
+import im5 from "../assets/im5.jpeg";
+import im4 from "../assets/im4.jpeg";
 
 export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
       <section className="h-screen bg-[url('https://images.unsplash.com/photo-1581578731548-c64695cc6952')] bg-cover bg-center flex items-center ">
-        <div className="bg-black/60  w-full h-full flex items-center">
+        <div className="bg-green-500/60  w-full h-full flex items-center">
           <div className="max-w-7xl mx-auto px-6 text-white">
             <h1 className="text-4xl md:text-6xl font-bold">
               Clean Spaces. Healthy Living. <br />
@@ -174,7 +179,7 @@ export default function Home() {
       {/* CONTENT */}
       <div className="bg-[#f5f5f5] p-8 rounded-lg">
         <h2 className="text-2xl md:text-3xl font-bold text-[#1a1a2e] mb-2">
-          SafaiWala.Pk – Mission & Vision
+           Mission & Vision
         </h2>
 
         <h3 className="text-[#f58220] font-bold text-xl mb-6">
@@ -182,7 +187,7 @@ export default function Home() {
         </h3>
 
         <p className="text-gray-600 mb-6">
-          “SafaiWala.Pk welcomes a world where quality professional cleaning is
+          “welcomes a world where quality professional cleaning is
           accessible at low cost and readily available to every household.
           We aim to create a healthy environment for our clients while building
           a strong reputation in the industry.”
@@ -206,7 +211,7 @@ export default function Home() {
 
       {/* IMAGE */}
       <div className="relative">
-        <div className="text-center mb-4">
+        <div className="text-center mb-6">
           <span className="text-6xl md:text-8xl font-bold text-[#f58220]/20">
             MISSION
           </span>
@@ -215,15 +220,50 @@ export default function Home() {
           </div>
         </div>
 
-        <img
-          src={m1}
-          alt="Mission Vision"
-          className="rounded-lg shadow-xl w-full"
-        />
+        {/* Images Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <img
+            src={im1}
+            alt="Mission Image 1"
+            className="rounded-lg shadow-xl w-full object-cover h-auto sm:h-48 md:h-64"
+          />
+
+          <img
+            src={im6}
+            alt="Mission Image 2"
+            className="rounded-lg shadow-xl w-full object-cover h-auto sm:h-48 md:h-64"
+          />
+
+          <img
+            src={im3}
+              alt="Mission Image 3"
+              className="rounded-lg shadow-xl w-full object-cover h-auto sm:h-48 md:h-64"
+          />
+
+          <img
+            src={im2}
+            alt="Mission Image 3"
+            className="rounded-lg shadow-xl w-full object-cover h-auto sm:h-48 md:h-64"
+          />
+
+           <img
+            src={im5}
+            alt="Mission Image 3"
+            className="rounded-lg shadow-xl w-full object-cover h-auto sm:h-48 md:h-64"
+          />
+
+           <img
+            src={im4}
+            alt="Mission Image 3"
+            className="rounded-lg shadow-xl w-full object-cover h-auto sm:h-48 md:h-64"
+          />
+          
+        </div>
       </div>
 
     </div>
   </div>
+
 </section>
 
 
