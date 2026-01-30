@@ -120,8 +120,7 @@ export default function Home() {
           EXPERT EMPLOYEES
         </h3>
         <p className="text-gray-600 text-sm">
-          We have highly trained and experienced employees who are experts in
-          their field of cleaning services.
+          People who maintain cleanliness themselves understand cleaning work best. Likewise, we have a well-trained staff who are neat, clean, and transparent in their work. Our entire network is built on a fully experienced team. We regularly provide training to our staff so that our valued customers never have any complaints.
         </p>
       </div>
 
@@ -134,8 +133,7 @@ export default function Home() {
           SECURE SERVICES
         </h3>
         <p className="text-gray-600 text-sm">
-          Our services are fully secure with proper insurance and bonding for
-          your complete peace of mind.
+           If any hotel, school, restaurant, event, society, house, or bungalow hires cleaning staff from us, we keep complete records of that person, and we take responsibility to respond in the future in case of any misconduct.
         </p>
       </div>
 
@@ -145,11 +143,11 @@ export default function Home() {
           <DollarSign className="w-10 h-10 text-white" />
         </div>
         <h3 className="text-lg font-bold text-[#1a1a2e] mb-2">
-          LOW COSTING
+          NO LIMITATION
         </h3>
         <p className="text-gray-600 text-sm">
-          We offer competitive pricing without compromising on the quality of
-          our cleaning services.
+           Many cleaning companies limit their services and avoid tasks like washroom or toilet cleaning.
+            We have no such limitations and provide complete cleaning solutions. From washrooms and garbage removal to blocked drains and odor control, we handle it all.
         </p>
       </div>
 
@@ -162,8 +160,7 @@ export default function Home() {
           ON TIME FINISHED
         </h3>
         <p className="text-gray-600 text-sm">
-          We value your time and always complete our work within the promised
-          timeframe.
+           We value your precious time, so we will make every effort to complete your cleaning work as promised without wasting your time and to earn your trust.
         </p>
       </div>
 
