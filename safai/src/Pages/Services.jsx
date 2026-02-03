@@ -1,15 +1,23 @@
-import ab1 from "../assets/ab1.PNG";
+import s1 from "../assets/s1.png";
+import s2 from "../assets/s2.png";
+import s3 from "../assets/s3.png";
+import s4 from "../assets/s4.png";
+import s5 from "../assets/s5.png";
+import s6 from "../assets/s6.png";
+import s7 from "../assets/s7.png";
+import s88 from "../assets/s88.png";
+import s9 from "../assets/s9.png";
 
 const services = [
-  { title: "HOSPITAL CLEANING", image: ab1, link: "#" },
-  { title: "SCHOOL CLEANING", image: "upholstery cleaning furniture", link: "#" },
-  { title: "RESTAURANT CLEANING", image: "carpet cleaning steam machine", link: "#" },
-  { title: "APARTMENT CLEANING", image: "mattress cleaning sanitizing", link: "#" },
-  { title: "BANK OFFICE CLEANING", image: "curtain cleaning service", link: "#" },
-  { title: "PETROL PUMP CLEANING", image: "curtain cleaning service", link: "#" },
-  { title: "SOCIETY CLEANING", image: "curtain cleaning service", link: "#" },
-  { title: "FACTORY CLEANING", image: "curtain cleaning service", link: "#" },
-  { title: "HOME AND BUNGALOW CLEANING", image: "curtain cleaning service", link: "#" },
+  { title: "HOSPITAL CLEANING", image: s1, link: "#" },
+  { title: "SCHOOL CLEANING", image: s2, link: "#" },
+  { title: "RESTAURANT CLEANING", image: s3, link: "#" },
+  { title: "APARTMENT CLEANING", image: s4, link: "#" },
+  { title: "BANK OFFICE CLEANING", image: s5, link: "#" },
+  { title: "PETROL PUMP CLEANING", image: s6, link: "#" },
+  { title: "SOCIETY CLEANING", image: s7, link: "#" },
+  { title: "FACTORY CLEANING", image: s88, link: "#" },
+  { title: "HOME AND BUNGALOW CLEANING", image: s9, link: "#" },
 ]
 
 export default function OurServices() {
@@ -30,7 +38,7 @@ export default function OurServices() {
               key={index}
               className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative aspect-4/3 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
